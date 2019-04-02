@@ -34,10 +34,6 @@ call plug#end()
 
 " vim airline 字体设置
 let g:airline_powerline_fonts = 1
-"call airline#parts#define_function('ALE', 'ALEGetStatusLine')
-"call airline#parts#define_condition('ALE', 'exists("*ALEGetStatusLine")')
-"
-"let g:airline_section_error = airline#section#create_right(['ALE'])
 
 " 设置 leader key 为 SPC
 let mapleader = "\<Space>"
