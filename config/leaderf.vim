@@ -1,11 +1,10 @@
-" Lf 配置
-
+" Leaderf 配置
 let g:Lf_ShortcutF = '<c-p>'
 let g:Lf_ShortcutB = '<m-n>'
-noremap <c-n> :LeaderfMru<cr>
-noremap <f12> :LeaderfFunction!<cr>
-noremap <m-n> :LeaderfBuffer<cr>
-noremap <m-m> :LeaderfTag<cr>
+noremap <Leader>lm :LeaderfMru<cr>
+noremap <Leader>lf :LeaderfFunction!<cr>
+noremap <Leader>lb :LeaderfBuffer<cr>
+noremap <Leader>lt :LeaderfTag<cr>
 let g:Lf_StlSeparator = { 'left': '', 'right': '', 'font': '' }
 
 let g:Lf_RootMarkers = ['.project', '.root', '.svn', '.git']

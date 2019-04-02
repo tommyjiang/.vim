@@ -17,15 +17,15 @@ source $VIMRUNTIME/delmenu.vim
 source $VIMRUNTIME/menu.vim
 
 " 状态栏设置
-set statusline=
-set statusline+=%1*\ %<%F\                                "File+path
-set statusline+=%2*\ %y\                                  "FileType
-set statusline+=%3*\ %{''.(&fenc!=''?&fenc:&enc).''}      "Encoding
-set statusline+=%3*\ %{(&bomb?\",BOM\":\"\")}\            "Encoding2
-set statusline+=%4*\ %{&ff}\                              "FileFormat (dos/unix..) 
-set statusline+=%8*\ %=\ row:%l/%L\ (%03p%%)\             "Rownumber/total (%)
-set statusline+=%9*\ col:%03c\                            "Colnr
-set statusline+=%0*\ \ %m%r%w\ %P\ \                      "Modified? Readonly? Top/bot.
+" set statusline=
+" set statusline+=%1*\ %<%F\                                "File+path
+" set statusline+=%2*\ %y\                                  "FileType
+" set statusline+=%3*\ %{''.(&fenc!=''?&fenc:&enc).''}      "Encoding
+" set statusline+=%3*\ %{(&bomb?\",BOM\":\"\")}\            "Encoding2
+" set statusline+=%4*\ %{&ff}\                              "FileFormat (dos/unix..)
+" set statusline+=%8*\ %=\ row:%l/%L\ (%03p%%)\             "Rownumber/total (%)
+" set statusline+=%9*\ col:%03c\                            "Colnr
+" set statusline+=%0*\ \ %m%r%w\ %P\ \                      "Modified? Readonly? Top/bot.
 " 始终显示状态栏
 set laststatus=2
 
@@ -54,69 +54,71 @@ se guifont=Inconsolata\ 18
 
 " 设置默认窗口大小
 " se lines=30 columns=110
- 
+
 " 设置当前行高亮, cursorline
 se cul
- 
+
 " 显示光标位置
 se ruler
 
 " enable magic matching
 set magic
- 
+
 " show matching bracets
 set showmatch
- 
+
 " highlight search things
 set hlsearch
 
 " incremental match when searching
 set incsearch
- 
+
 " ignore case when searching
 set smartcase
 set ignorecase
- 
 
 " -------------
 " 代码设置
 " -------------
- 
+
 " 设置语法高亮
 syntax enable
 syntax on
 
 " 显示缩进tab线
-se list lcs=tab:\|\ 
- 
+se list lcs=tab:\|\
+
 " -------------
 " 缩进设置
 " -------------
- 
+
 " auto indent
 set autoindent
- 
+
 " c indent
 set cindent
- 
+
 " smart indet
 set smartindent
- 
+
 " use hard tabs
 set tabstop=4
+set expandtab
 " 将空格转换为tab, :%retab
-set noexpandtab
 set shiftwidth=4
- 
+
 " 自动换行
 " break long lines
 set textwidth=1000
- 
+
 " config C-indenting
 set cinoptions=:0,l1,t0,g0
- 
+
 " enable filetype plugin
 filetype plugin indent on
- 
+
 " map jj to ESC
 imap jj <ESC>
+
+set list          " Display unprintable characters f12 - switches
+set listchars=tab:•\ ,trail:•,extends:»,precedes:« " Unprintable chars mapping

@@ -10,9 +10,22 @@ let g:ycm_complete_in_strings=1
 let g:ycm_key_invoke_completion = '<c-z>'
 set completeopt=menu,menuone
 
+" 取消 ycm diagnostics 的键映射
+let g:ycm_key_detailed_diagnostics = ''
+
 noremap <c-z> <NOP>
 
 let g:ycm_semantic_triggers =  {
            \ 'c,cpp,python,java,go,erlang,perl': ['re!\w{2}'],
            \ 'cs,lua,javascript': ['re!\w{2}'],
            \ }
+
+let g:ycm_filetype_whitelist = {
+                             \ "c":1,
+                             \ "cpp":1,
+                             \ "vim":1,
+                             \ "sh":1,
+                             \ "zsh":1,
+                             \ "py":1,
+                             \ "python":1,
+                             \ }
