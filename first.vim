@@ -19,6 +19,9 @@ set signcolumn=yes
 set timeoutlen=300
 set ttimeoutlen=0
 
+" NERDTree leader key
+noremap <Leader>nt :NERDTreeToggle<cr>
+
 " choosewin Plugin activation
 nmap  -  <Plug>(choosewin)
 let g:choosewin_overlay_enable = 1

@@ -4,6 +4,7 @@ let g:lmap =  {}
 " Second level dictionaries:
 let g:lmap.f = { 'name' : 'File' }
 let g:lmap.l = { 'name' : 'LeaderF' }
+let g:lmap.n = { 'name' : 'NERDTree' }
 let g:lmap.o = { 'name' : 'Open' }
 let g:lmap.p = { 'name' : 'Plugin' }
 " 'name' is a special field. It will define the name of the group.

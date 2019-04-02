@@ -36,6 +36,8 @@ Plug 'hecal3/vim-leader-guide'
 Plug 't9md/vim-choosewin'
 " 查找显示数量
 Plug 'google/vim-searchindex'
+" 文件树形浏览
+Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 
 " 文本对象全家桶
 Plug 'kana/vim-textobj-user'
