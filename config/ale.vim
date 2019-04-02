@@ -1,7 +1,6 @@
 let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
 nmap sp <Plug>(ale_previous_wrap)
 nmap sn <Plug>(ale_next_wrap)
-nmap <Leader>at :ALEToggle<CR>
 
 let g:ale_linters = {'c': ['gcc'], 'cpp': ['gcc']}
 let g:ale_linters_explicit = 1

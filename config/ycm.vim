@@ -30,5 +30,5 @@ let g:ycm_filetype_whitelist = {
                              \ "python":1,
                              \ }
 
-let g:ycm_key_list_select_completion = ['<C-n>', '<C-j>', '<Down>']
-let g:ycm_key_list_previous_completion = ['<C-p>', '<C-k>', '<Up>']
+"let g:ycm_key_list_select_completion = ['<C-n>', '<C-j>', '<Down>']
+"let g:ycm_key_list_previous_completion = ['<C-p>', '<C-k>', '<Up>']

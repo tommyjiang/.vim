@@ -102,8 +102,8 @@ set cindent
 set smartindent
 
 " use hard tabs
-set tabstop=4
-set expandtab
+" set tabstop=4
+" set expandtab
 " 将空格转换为tab, :%retab
 set shiftwidth=4
 

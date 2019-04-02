@@ -1,6 +1,7 @@
 " For debug only
 " let g:gutentags_trace = 1
 
+" let g:gutentags_executable = '~/universal-ctags/bin/ctags'
 let g:gutentags_modules = ['ctags']
 " gutentags 搜索工程目录的标志，碰到这些文件/目录名就停止向上一级目录递归
 let g:gutentags_project_root = ['.root', '.git', '.project']
