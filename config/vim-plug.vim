@@ -11,15 +11,15 @@ call plug#begin('~/.vim/plugged')
 " 自动补全
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
 " 模糊查找
-Plug 'Yggdroot/LeaderF', { 'do': './install.sh', 'for': 'cpp'}
+Plug 'Yggdroot/LeaderF', { 'do': './install.sh', 'for': ['c', 'cpp']}
 
 " C++
   " C++ 高亮
-  Plug 'octol/vim-cpp-enhanced-highlight', { 'for': 'cpp'}
+  Plug 'octol/vim-cpp-enhanced-highlight', { 'for': ['c', 'cpp']}
   " 自动生成 tags
   Plug 'ludovicchabant/vim-gutentags'
   " 语法检查
-  Plug 'w0rp/ale', {'for': 'cpp'}
+  Plug 'w0rp/ale', {'for': ['c', 'cpp']}
   " 参数提示
   "Plug 'tenfyzhong/CompleteParameter.vim'
   Plug 'Shougo/echodoc.vim'
@@ -38,6 +38,7 @@ Plug 't9md/vim-choosewin'
 Plug 'google/vim-searchindex'
 " 文件树形浏览
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+Plug 'luochen1990/rainbow'
 
 " 文本对象全家桶
 Plug 'kana/vim-textobj-user'
@@ -53,3 +54,6 @@ noremap <Leader>pi :PlugInstall<cr>
 noremap <Leader>ps :PlugStatus<cr>
 noremap <Leader>pu :PlugUpdate<cr>
 noremap <Leader>pU :PlugUpgrade<cr>
+
+" Rainbom paren 设置
+let g:rainbow_active = 1
