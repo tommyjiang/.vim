@@ -3,6 +3,7 @@ let g:lmap =  {}
 
 " Second level dictionaries:
 let g:lmap.f = { 'name' : 'File' }
+let g:lmap.g = { 'name' : 'Git' }
 let g:lmap.l = { 'name' : 'LeaderF' }
 let g:lmap.n = { 'name' : 'NERDTree' }
 let g:lmap.o = { 'name' : 'Open' }
@@ -29,11 +30,12 @@ let g:lmap.p = { 'name' : 'Plugin' }
 
 " Create new menus not based on existing mappings:
 let g:lmap.g = {
-                \'name' : 'Git Menu',
-                \'s' : ['Gstatus', 'Git Status'],
-                \'p' : ['Gpull',   'Git Pull'],
-                \'u' : ['Gpush',   'Git Push'],
+                \'name' : 'Git',
+                \'b' : ['Gblame', 'Git Blame'],
                 \'c' : ['Gcommit', 'Git Commit'],
+                \'p' : ['Gpull',   'Git Pull'],
+                \'s' : ['Gstatus', 'Git Status'],
+                \'u' : ['Gpush',   'Git Push'],
                 \'w' : ['Gwrite',  'Git Write'],
                 \}
 
