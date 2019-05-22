@@ -14,7 +14,7 @@ let g:airline#extensions#ale#enabled = 1
 let g:ale_c_parse_makefile = 1
 
 let g:ale_c_gcc_options = '-Wall -O2 -std=c99 -I /home/haojiang/NetHack/include'
-let g:ale_cpp_gcc_options = '-Wall -O2 -std=c++11 -Wno-sign-compare -I /share2/public/haojiang/rocs/include -I /usr/local/cuda-9.0/include -I /share2/public/haojiang/rocs/src -I /share2/public/haojiang/rocs/build/src -I /share2/public/haojiang/rocs/3rdparty'
+let g:ale_cpp_gcc_options = '-Wall -O2 -std=c++11 -Wno-sign-compare -I /share2/public/haojiang/rocs/include -I /share2/public/haojiang/.local/cuda-9.0/include -I /share2/public/haojiang/rocs/src -I /share2/public/haojiang/rocs/build/src -I /share2/public/haojiang/rocs/3rdparty'
 "let g:ale_c_cppcheck_options = ''
 "let g:ale_cpp_cppcheck_options = ''
 
