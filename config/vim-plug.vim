@@ -11,7 +11,7 @@ call plug#begin('~/.vim/plugged')
 " 自动补全
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
 " 模糊查找
-Plug 'Yggdroot/LeaderF', { 'do': './install.sh', 'for': ['c', 'cpp']}
+Plug 'Yggdroot/LeaderF', { 'do': './install.sh'}
 
 " C++
   " C++ 高亮
