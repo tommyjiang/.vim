@@ -13,18 +13,17 @@ Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer' }
 " 模糊查找
 Plug 'Yggdroot/LeaderF', { 'do': './install.sh'}
 
-" C++
+" C/C++
   " C++ 高亮
   Plug 'octol/vim-cpp-enhanced-highlight', { 'for': ['c', 'cpp']}
-  " 自动生成 tags
+  " 自动生成 tags，需要 ctags
   Plug 'ludovicchabant/vim-gutentags'
   " 语法检查
   Plug 'w0rp/ale', {'for': ['c', 'cpp']}
   " 参数提示
-  "Plug 'tenfyzhong/CompleteParameter.vim'
   Plug 'Shougo/echodoc.vim'
 
-" 侧边栏 Git 情况
+" 侧边栏 Git 状态
 Plug 'mhinz/vim-signify'
 " Git 常用命令
 Plug 'tpope/vim-fugitive'
