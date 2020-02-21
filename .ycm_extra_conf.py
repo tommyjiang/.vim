@@ -45,15 +45,7 @@ flags = [
 # '-isystem', '/usr/loacl/include',
 # '-I', '/home/haojiang/NetHack/include',
 'c++',
-'-isystem', '/usr/include/c++/4.8.5',
-'-isystem', '/usr/include/c++/4.8.5/tr1',
-'-isystem', '/usr/include/c++/4.8.5/x86_64-redhat-linux',
-'-isystem', '/home/haojiang/NetHack/include',
-'-isystem', '/home/haojiang/rocs/include',
-'-isystem', '/usr/local/cuda-9.0/include',
-'-isystem', '/home/haojiang/rocs/src',
-'-isystem', '/home/haojiang/rocs/build/src',
-'-isystem', '/home/haojiang/rocs/3rdparty',
+# TODO 需要自己添加 C++ library 的路径
 '-isystem', '/usr/include',
 '-isystem', '/usr/local/include',
 ]
