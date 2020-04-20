@@ -1,5 +1,10 @@
 " ycm 配置
-let g:ycm_server_python_interpreter='/usr/bin/python'
+let g:os = substitute(system('uname'), '\n', '', '')
+if g:os == "Darwin"
+    let g:ycm_server_python_interpreter='/usr/local/bin/python3'
+else
+    let g:ycm_server_python_interpreter='/usr/bin/python3'
+endif
 let g:ycm_global_ycm_extra_conf='~/.vim/.ycm_extra_conf.py'
 let g:ycm_add_preview_to_completeopt = 0
 let g:ycm_show_diagnostics_ui = 0

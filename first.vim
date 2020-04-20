@@ -28,7 +28,7 @@ let g:choosewin_overlay_enable = 1
 
 " command line 显示函数提示
 set noshowmode
-set cmdheight=2
+set cmdheight=1
 
 " echodoc enable at startup
 let g:echodoc#enable_at_startup = 1
