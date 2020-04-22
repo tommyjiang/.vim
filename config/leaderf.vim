@@ -15,3 +15,7 @@ let g:Lf_ShowRelativePath = 0
 let g:Lf_HideHelp = 1
 let g:Lf_StlColorscheme = 'powerline'
 let g:Lf_PreviewResult = {'Function':0, 'BufTag':0}
+
+" 使用 pop up 模式
+let g:Lf_WindowPosition = 'popup'
+let g:Lf_PreviewInPopup = 1

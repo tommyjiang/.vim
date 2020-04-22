@@ -12,6 +12,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'Valloric/YouCompleteMe', { 'do': 'python3 ./install.py --clang-completer' }
 " 模糊查找
 Plug 'Yggdroot/LeaderF', { 'do': './install.sh'}
+Plug 'ryanoasis/vim-devicons' " 图标显示
 
 " C/C++
   " C++ 高亮

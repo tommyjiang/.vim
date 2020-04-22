@@ -16,6 +16,8 @@ let g:airline_powerline_fonts = 1
 " 总是显示侧边栏(for vim-signify)
 set signcolumn=yes
 
+set encoding=UTF-8
+
 set timeoutlen=300
 set ttimeoutlen=0
 
