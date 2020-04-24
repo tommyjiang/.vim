@@ -9,7 +9,7 @@ endif
 call plug#begin('~/.vim/plugged')
 
 " 自动补全
-Plug 'Valloric/YouCompleteMe', { 'do': 'python3 ./install.py --clang-completer' }
+Plug 'Valloric/YouCompleteMe', { 'do': 'python3 ./install.py --clangd-completer' }
 " 模糊查找
 Plug 'Yggdroot/LeaderF', { 'do': './install.sh'}
 Plug 'ryanoasis/vim-devicons' " 图标显示
