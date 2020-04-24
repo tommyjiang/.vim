@@ -9,6 +9,7 @@ source ~/.vim/config/origin.vim
 source ~/.vim/config/leader-guide.vim
 source ~/.vim/config/gutentags.vim
 source ~/.vim/config/ale.vim
+source ~/.vim/config/markdown-preview.vim
 
 " vim airline 字体设置
 let g:airline_powerline_fonts = 1
@@ -20,9 +21,6 @@ set encoding=UTF-8
 
 set timeoutlen=300
 set ttimeoutlen=0
-
-" NERDTree leader key
-noremap <Leader>nt :NERDTreeToggle<cr>
 
 " choosewin Plugin activation
 nmap  -  <Plug>(choosewin)

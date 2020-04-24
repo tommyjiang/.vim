@@ -38,7 +38,12 @@ Plug 't9md/vim-choosewin'
 Plug 'google/vim-searchindex'
 " 文件树形浏览
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+" 彩虹括号
 Plug 'luochen1990/rainbow'
+" 修改匹配括号
+Plug 'tpope/vim-surround'
+" Markdown 预览
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
 
 " 文本对象全家桶
 Plug 'kana/vim-textobj-user'
@@ -46,6 +51,9 @@ Plug 'kana/vim-textobj-indent'
 Plug 'kana/vim-textobj-syntax'
 Plug 'kana/vim-textobj-function', { 'for':['c', 'cpp', 'vim', 'java'] }
 Plug 'sgur/vim-textobj-parameter'
+
+" 注释
+Plug 'tpope/vim-commentary'
 
 call plug#end()
 

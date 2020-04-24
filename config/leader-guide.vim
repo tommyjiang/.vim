@@ -5,6 +5,7 @@ let g:lmap =  {}
 let g:lmap.f = { 'name' : 'File' }
 let g:lmap.g = { 'name' : 'Git' }
 let g:lmap.l = { 'name' : 'LeaderF' }
+let g:lmap.m = { 'name' : 'Plugin' }
 let g:lmap.n = { 'name' : 'NERDTree' }
 let g:lmap.o = { 'name' : 'Open' }
 let g:lmap.p = { 'name' : 'Plugin' }
@@ -39,13 +40,26 @@ let g:lmap.g = {
                 \'w' : ['Gwrite',  'Git Write'],
                 \}
 
-" If you use NERDCommenter:
-let g:lmap.c = { 'name' : 'Comments' }
-" Define some descriptions
-let g:lmap.c.c = ['call feedkeys("\<Plug>NERDCommenterComment")','Comment']
-let g:lmap.c[' '] = ['call feedkeys("\<Plug>NERDCommenterToggle")','Toggle']
-" The Descriptions for other mappings defined by NerdCommenter, will default
-" to their respective commands.
+let g:lmap.m = {
+                \'name' : 'Markdown',
+                \'p' : ['MarkdownPreview', 'Markdown Preview'],
+                \'s' : ['MarkdownPreviewStop', 'Markdown Preview Stop'],
+                \}
+
+let g:lmap.n = {
+                \'name' : 'NERDTree',
+                \'t' : ['NERDTreeToggle', 'Toggle NERDTree'],
+                \}
+
+
+
+"" If you use NERDCommenter:
+"let g:lmap.c = { 'name' : 'Comments' }
+"" Define some descriptions
+"let g:lmap.c.c = ['call feedkeys("\<Plug>NERDCommenterComment")','Comment']
+"let g:lmap.c[' '] = ['call feedkeys("\<Plug>NERDCommenterToggle")','Toggle']
+"" The Descriptions for other mappings defined by NerdCommenter, will default
+"" to their respective commands.
 
 call leaderGuide#register_prefix_descriptions("<Space>", "g:lmap")
 nnoremap <silent> <leader> :<c-u>LeaderGuide '<Space>'<CR>
