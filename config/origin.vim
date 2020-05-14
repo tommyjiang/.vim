@@ -36,20 +36,11 @@ set showcmd
 " 显示行号
 se nu
 
-" 标尺信息
-se ru
-
 " 根据不同系统设置默认字体
 se guifont=Inconsolata\ 18
 
-" 设置默认窗口大小
-" se lines=30 columns=110
-
 " 设置当前行高亮, cursorline
 se cul
-
-" 显示光标位置
-se ruler
 
 " enable magic matching
 set magic
@@ -67,20 +58,12 @@ set incsearch
 set smartcase
 set ignorecase
 
-" -------------
-" 代码设置
-" -------------
-
 " 设置语法高亮
 syntax enable
 syntax on
 
 " 显示缩进tab线
 se list lcs=tab:\|\
-
-" -------------
-" 缩进设置
-" -------------
 
 " auto indent
 set autoindent
@@ -94,11 +77,11 @@ set smartindent
 " use hard tabs
 set tabstop=4
 set expandtab
+
 " 将空格转换为tab, :%retab
 set shiftwidth=4
 
 " 自动换行
-" break long lines
 set textwidth=1000
 
 " config C-indenting
@@ -112,3 +95,14 @@ imap jj <ESC>
 
 set list          " Display unprintable characters f12 - switches
 set listchars=tab:•\ ,trail:•,extends:»,precedes:« " Unprintable chars mapping
+
+" 设置光标样式
+let &t_EI = "\e[2 q"  " 正常模式
+let &t_SR = "\e[4 q"  " 替换模式
+let &t_SI = "\e[6 q"  " 插入模式
+
+" optional reset cursor on start:
+augroup myCmds
+au!
+autocmd VimEnter * silent !echo -ne "\e[2 q"
+augroup END
