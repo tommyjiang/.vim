@@ -21,8 +21,6 @@ Plug 'ryanoasis/vim-devicons' " 图标显示
   Plug 'ludovicchabant/vim-gutentags'
   " 语法检查
   Plug 'w0rp/ale', {'for': ['c', 'cpp']}
-  " 参数提示
-  Plug 'Shougo/echodoc.vim'
 
 " 侧边栏 Git 状态
 Plug 'mhinz/vim-signify'
@@ -30,6 +28,8 @@ Plug 'mhinz/vim-signify'
 Plug 'tpope/vim-fugitive'
 " 状态栏
 Plug 'vim-airline/vim-airline'
+" Tag 显示
+Plug 'majutsushi/tagbar'
 " 显示 leader key 对应的命令
 Plug 'hecal3/vim-leader-guide'
 " 切换窗口

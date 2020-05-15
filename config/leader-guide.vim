@@ -6,7 +6,7 @@ let g:lmap.f = { 'name' : 'File' }
 let g:lmap.g = { 'name' : 'Git' }
 let g:lmap.l = { 'name' : 'LeaderF' }
 let g:lmap.m = { 'name' : 'Plugin' }
-let g:lmap.n = { 'name' : 'NERDTree' }
+let g:lmap.w = { 'name' : 'Window' }
 let g:lmap.o = { 'name' : 'Open' }
 let g:lmap.p = { 'name' : 'Plugin' }
 let g:lmap.y = { 'name' : 'YCM' }
@@ -31,7 +31,6 @@ nmap <silent> <leader>fw :w<CR>
 let g:lmap.f.w = ['w', 'Write file']
 
 nmap <silent> <leader>yh <plug>(YCMHover)
-" let g:lmap.y.h = ['YCMHover', 'Display documentation']
 
 " Create new menus not based on existing mappings:
 let g:lmap.g = {
@@ -50,9 +49,10 @@ let g:lmap.m = {
                 \'s' : ['MarkdownPreviewStop', 'Markdown Preview Stop'],
                 \}
 
-let g:lmap.n = {
-                \'name' : 'NERDTree',
-                \'t' : ['NERDTreeToggle', 'Toggle NERDTree'],
+let g:lmap.w = {
+                \'name' : 'Window',
+                \'n' : ['NERDTreeToggle', 'Toggle NERDTree'],
+                \'t' : ['TagbarToggle', 'Toggle Tag List'],
                 \}
 
 

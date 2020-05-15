@@ -100,9 +100,3 @@ set listchars=tab:•\ ,trail:•,extends:»,precedes:« " Unprintable chars map
 let &t_EI = "\e[2 q"  " 正常模式
 let &t_SR = "\e[4 q"  " 替换模式
 let &t_SI = "\e[6 q"  " 插入模式
-
-" optional reset cursor on start:
-augroup myCmds
-au!
-autocmd VimEnter * silent !echo -ne "\e[2 q"
-augroup END
