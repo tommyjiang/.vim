@@ -65,3 +65,6 @@ noremap <Leader>pU :PlugUpgrade<cr>
 
 " Rainbom paren 设置
 let g:rainbow_active = 1
+
+" TagBar tag 顺序
+let g:tagbar_sort = 0
