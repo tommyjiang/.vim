@@ -41,3 +41,7 @@ let g:echodoc#enable_at_startup = 1
 "   let c = nr2char(1+char2nr(c))
 " endw
 
+" 代码自动折叠
+set foldmethod=syntax
+" 未匹配括号高亮使用 Error 样式
+hi link MatchOpen Error

@@ -40,6 +40,8 @@ Plug 'google/vim-searchindex'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 " 彩虹括号
 Plug 'luochen1990/rainbow'
+" 未匹配括号
+Plug 'arnar/vim-matchopen'
 " 修改匹配括号
 Plug 'tpope/vim-surround'
 " Markdown 预览
