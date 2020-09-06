@@ -18,8 +18,15 @@ let g:lmap.y = { 'name' : 'YCM' }
 nmap <silent> <leader>fd :e $MYVIMRC<CR>
 let g:lmap.f.d = ['e $MYVIMRC', 'Open vimrc']
 
-nmap <silent> <leader>fs :so %<CR>
-let g:lmap.f.s = ['so %', 'Source file']
+
+fun! TrimWhitespace()
+    let l:save = winsaveview()
+    keeppatterns %s/\s\+$//e
+    call winrestview(l:save)
+endfun
+
+nmap <silent> <leader>fs :call TrimWhitespace()<CR>
+let g:lmap.f.s = [':call TrimWhitespace()<CR>', 'Strip spaces']
 
 nmap <silent> <leader>oo  :copen<CR>
 let g:lmap.o.o = ['copen', 'Open quickfix']
@@ -54,8 +61,6 @@ let g:lmap.w = {
                 \'n' : ['NERDTreeToggle', 'Toggle NERDTree'],
                 \'t' : ['TagbarToggle', 'Toggle Tag List'],
                 \}
-
-
 call leaderGuide#register_prefix_descriptions("<Space>", "g:lmap")
 nnoremap <silent> <leader> :<c-u>LeaderGuide '<Space>'<CR>
 vnoremap <silent> <leader> :<c-u>LeaderGuideVisual '<Space>'<CR>
