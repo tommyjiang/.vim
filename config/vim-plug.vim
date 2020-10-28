@@ -31,7 +31,8 @@ Plug 'vim-airline/vim-airline'
 " Tag 显示
 Plug 'majutsushi/tagbar'
 " 显示 leader key 对应的命令
-Plug 'hecal3/vim-leader-guide'
+" Plug 'hecal3/vim-leader-guide'
+Plug 'liuchengxu/vim-which-key'
 " 切换窗口
 Plug 't9md/vim-choosewin'
 " 查找显示数量

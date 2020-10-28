@@ -6,7 +6,7 @@ source ~/.vim/config/vim-plug.vim
 source ~/.vim/config/ycm.vim
 source ~/.vim/config/leaderf.vim
 source ~/.vim/config/origin.vim
-source ~/.vim/config/leader-guide.vim
+source ~/.vim/config/which-key.vim
 source ~/.vim/config/gutentags.vim
 source ~/.vim/config/ale.vim
 source ~/.vim/config/markdown-preview.vim
