@@ -69,5 +69,6 @@ noremap <Leader>pU :PlugUpgrade<cr>
 " Rainbom paren 设置
 let g:rainbow_active = 1
 
-" TagBar tag 顺序
+" TagBar tag 顺序 & 位置
 let g:tagbar_sort = 0
+let g:tagbar_position = 'topleft vertical'
