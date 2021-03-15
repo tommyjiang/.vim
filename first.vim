@@ -46,6 +46,6 @@ set foldmethod=syntax
 " 未匹配括号高亮使用 Error 样式
 hi link MatchOpen Error
 " 插入状态下自动匹配括号
-inoremap { {<CR>}<Esc>ko
+inoremap { {}<Esc>F{a
 inoremap [ []<Esc>F[a
 inoremap ( ()<Esc>F(a
