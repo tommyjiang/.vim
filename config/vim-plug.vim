@@ -9,7 +9,7 @@ endif
 call plug#begin('~/.vim/plugged')
 
 " 自动补全
-Plug 'Valloric/YouCompleteMe', { 'do': 'python3 ./install.py --clangd-completer' }
+Plug 'Valloric/YouCompleteMe', { 'do': '/usr/local/bin/python3 ./install.py --clangd-completer'}
 " 模糊查找
 Plug 'Yggdroot/LeaderF', { 'do': './install.sh'}
 Plug 'ryanoasis/vim-devicons' " 图标显示
@@ -31,7 +31,6 @@ Plug 'vim-airline/vim-airline'
 " Tag 显示
 Plug 'majutsushi/tagbar'
 " 显示 leader key 对应的命令
-" Plug 'hecal3/vim-leader-guide'
 Plug 'liuchengxu/vim-which-key'
 " 切换窗口
 Plug 't9md/vim-choosewin'
