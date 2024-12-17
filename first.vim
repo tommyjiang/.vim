@@ -17,6 +17,9 @@ let g:airline_powerline_fonts = 1
 " 总是显示侧边栏(for vim-signify)
 set signcolumn=yes
 
+" 每行字数最多 80
+set textwidth=80
+
 set encoding=UTF-8
 
 set timeoutlen=300
