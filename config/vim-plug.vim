@@ -9,7 +9,7 @@ endif
 call plug#begin('~/.vim/plugged')
 
 " 自动补全
-Plug 'Valloric/YouCompleteMe', { 'do': '/usr/local/bin/python3 ./install.py --clangd-completer'}
+" Plug 'Valloric/YouCompleteMe', { 'do': '/usr/local/bin/python3 ./install.py --clangd-completer'}
 " 模糊查找
 Plug 'Yggdroot/LeaderF', { 'do': './install.sh'}
 Plug 'ryanoasis/vim-devicons' " 图标显示
@@ -18,7 +18,7 @@ Plug 'ryanoasis/vim-devicons' " 图标显示
   " C++ 高亮
   Plug 'octol/vim-cpp-enhanced-highlight', { 'for': ['c', 'cpp']}
   " 自动生成 tags，需要 ctags
-  Plug 'ludovicchabant/vim-gutentags'
+  " Plug 'ludovicchabant/vim-gutentags'
   " 语法检查
   Plug 'w0rp/ale', {'for': ['c', 'cpp']}
 
